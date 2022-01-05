@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.reminder.ReminderFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_header"
+            android:layout_width="match_parent"
+            android:layout_height="47dip"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_back_gray"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_7sdp"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_7sdp"
+                android:text="New Reminder"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_7sdp"
+                android:text="Done"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dip"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/cl_header"
+            app:strokeColor="#D1D5DB"
+            app:strokeWidth="1dip">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Title:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edt_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:maxLines="1"
+                    android:paddingHorizontal="@dimen/_14sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv1"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="25dip"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/mcv_title" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_7sdp"
+            android:text="Set Reminder"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dip"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            app:strokeColor="#898A8D"
+            app:strokeWidth="1dip">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingLeft="@dimen/_14sdp"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:text="2:30 AM"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dip"
+            android:layout_marginTop="@dimen/_14sdp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/mcv_time"
+            app:strokeColor="#898A8D"
+            app:strokeWidth="1dip">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingLeft="@dimen/_14sdp"
+                    android:text="Repeat"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_repeat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="end"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingLeft="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_next"
+                    app:layout_constraintStart_toEndOf="@+id/tv4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_round_navigate_next_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

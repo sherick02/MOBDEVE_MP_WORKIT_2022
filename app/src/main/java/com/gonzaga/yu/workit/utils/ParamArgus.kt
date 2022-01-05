@@ -1,4 +1,4 @@
-package com.R.R.utils
+package com.gonzaga.yu.workit.utils
 
 object ParamArgus {
     const val TITLE = "title"

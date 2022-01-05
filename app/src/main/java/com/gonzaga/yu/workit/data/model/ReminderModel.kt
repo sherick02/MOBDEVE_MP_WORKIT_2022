@@ -1,4 +1,4 @@
-package com.R.R.data.model
+package com.gonzaga.yu.workit.data.model
 
 import java.io.Serializable
 import java.util.*

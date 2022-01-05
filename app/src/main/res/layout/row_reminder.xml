@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mcv_row_reminder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dip"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_row_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingHorizontal="16dip"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_remove"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:srcCompat="@drawable/ic_remove" />
+
+        <TextView
+            android:id="@+id/edt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="2:30 PM"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_remove"
+            app:layout_constraintStart_toEndOf="@+id/iv_remove"
+            app:layout_constraintTop_toTopOf="@+id/iv_remove" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dip"
+            android:layout_marginRight="16dip"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edt_time" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/labelBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="edt_time,switch_on" />
+
+        <TextView
+            android:id="@+id/tv_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="47dip"
+            android:layout_marginLeft="47dip"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Repeat: Wed, Thurs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelBarrier" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_repeat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

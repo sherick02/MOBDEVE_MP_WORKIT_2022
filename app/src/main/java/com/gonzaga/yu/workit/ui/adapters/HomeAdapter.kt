@@ -1,4 +1,4 @@
-package com.R.R.ui.adapters
+package com.gonzaga.yu.workit.ui.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -10,8 +10,8 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.gonzaga.yu.workit.R
-import com.R.R.data.listeners.OnItemClickListener
-import com.R.R.data.model.HomeModel
+import com.gonzaga.yu.workit.data.listeners.OnItemClickListener
+import com.gonzaga.yu.workit.data.model.HomeModel
 import java.util.*
 
 class HomeAdapter(

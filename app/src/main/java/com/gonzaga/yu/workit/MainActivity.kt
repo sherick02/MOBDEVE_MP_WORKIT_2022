@@ -1,17 +1,17 @@
 package com.gonzaga.yu.workit
 
 import android.content.Context
-import com.R.R.ui.base.BaseActivity
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.NavController
 import android.os.Bundle
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
-import com.gonzaga.yu.workit.R
-import com.R.R.data.common.Constants
-import com.R.R.data.model.ExerciseModel
-import com.R.R.data.model.WorkoutModel
+
+import com.gonzaga.yu.workit.data.common.Constants
+import com.gonzaga.yu.workit.data.model.ExerciseModel
+import com.gonzaga.yu.workit.data.model.WorkoutModel
 import com.gonzaga.yu.workit.databinding.ActivityMainBinding
+import com.gonzaga.yu.workit.ui.base.BaseActivity
 import java.util.ArrayList
 
 class MainActivity : BaseActivity<ActivityMainBinding?>() {

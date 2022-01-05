@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dip"
+    app:cardCornerRadius="@dimen/_14sdp"
+    app:strokeColor="@color/black"
+    app:strokeWidth="1dip">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dip">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Enter the name of your  workout"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Workout 1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingHorizontal="@dimen/_14sdp"
+            android:paddingVertical="@dimen/_7sdp"
+            android:text="Cancel"
+            android:textColor="#0099FF"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_ok"
+            app:layout_constraintTop_toBottomOf="@id/edt_name" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingHorizontal="@dimen/_14sdp"
+            android:paddingVertical="@dimen/_7sdp"
+            android:text="Ok"
+            android:textColor="#0099FF"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

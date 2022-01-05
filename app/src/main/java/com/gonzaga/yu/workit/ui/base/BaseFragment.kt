@@ -1,4 +1,4 @@
-package com.R.R.ui.base
+package com.gonzaga.yu.workit.ui.base
 
 import android.app.ProgressDialog
 import android.os.Bundle

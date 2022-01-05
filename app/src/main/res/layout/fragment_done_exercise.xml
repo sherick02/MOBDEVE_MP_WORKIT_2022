@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.DoneExerciseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0074B9"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dip"
+            android:layout_marginTop="55dip"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="CONGRATULATIONS!"
+            android:textColor="#DDC914"
+            android:textSize="@dimen/_22sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_sets" />
+
+        <TextView
+            android:id="@+id/tv_workout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dip"
+            android:layout_marginTop="55dip"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Completed!"
+            android:textColor="#DDC914"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_sets" />
+
+        <TextView
+            android:id="@+id/tv_total_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dip"
+            android:layout_marginTop="55dip"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Completed!"
+            android:textColor="#DDC914"
+            android:textSize="@dimen/_22sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_sets" />
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="match_parent"
+            android:layout_height="47dip"
+            android:layout_marginHorizontal="16dip"
+            android:layout_marginTop="90dip"
+            android:background="@drawable/card_back_green"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Done"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </LinearLayout>
+
+</layout>

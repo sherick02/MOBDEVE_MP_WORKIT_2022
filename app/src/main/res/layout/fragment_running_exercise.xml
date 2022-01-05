@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.RunningExerciseFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_done"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mcv_img"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="35dip"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintDimensionRatio="h,301:241"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_frame_2" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/tv_exercise_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dip"
+                    android:layout_marginTop="31dip"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mcv_img" />
+
+                <TextView
+                    android:id="@+id/tv_sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dip"
+                    android:layout_marginTop="31dip"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="sets"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_exercise_title" />
+
+                <TextView
+                    android:id="@+id/tv_reps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dip"
+                    android:layout_marginTop="55dip"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="reps"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sets" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="match_parent"
+            android:layout_height="47dip"
+            android:layout_marginHorizontal="16dip"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_back_dark_green"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Done"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

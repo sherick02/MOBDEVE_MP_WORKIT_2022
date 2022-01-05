@@ -1,10 +1,10 @@
-package workitkotlin.mobdeve.s11.gonzaga.luis.workitkotlin.ui.auth
+package com.gonzaga.yu.workit.ui.auth
 
 import android.content.Context
-import com.R.R.ui.base.BaseActivity
 import android.os.Bundle
-import com.gonzaga.yu.workit.workitkotlin.R
+import com.gonzaga.yu.workit.R
 import com.gonzaga.yu.workit.databinding.ActivityRegisterBinding
+import com.gonzaga.yu.workit.ui.base.BaseActivity
 
 class RegisterActivity : BaseActivity<ActivityRegisterBinding?>() {
 

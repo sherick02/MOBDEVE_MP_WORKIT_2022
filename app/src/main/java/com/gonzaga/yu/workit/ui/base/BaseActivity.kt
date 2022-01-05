@@ -1,4 +1,4 @@
-package com.R.R.ui.base
+package com.gonzaga.yu.workit.ui.base
 
 import androidx.databinding.ViewDataBinding
 import androidx.appcompat.app.AppCompatActivity
@@ -15,9 +15,7 @@ import android.view.inputmethod.InputMethodManager
 import com.gonzaga.yu.workit.R
 import java.lang.Exception
 
-/**
- * Created by Nimesh on 12-08-2021.
- */
+
 abstract class BaseActivity<B : ViewDataBinding?> : AppCompatActivity() {
 
     private val TAG = context.javaClass.simpleName

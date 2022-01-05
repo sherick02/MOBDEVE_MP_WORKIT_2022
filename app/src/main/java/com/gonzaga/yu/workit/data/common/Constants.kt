@@ -1,7 +1,7 @@
-package com.R.R.data.common
+package com.gonzaga.yu.workit.data.common
 
-import com.R.R.data.model.WorkoutModel
-import com.R.R.data.model.ExerciseModel
+import com.gonzaga.yu.workit.data.model.WorkoutModel
+import com.gonzaga.yu.workit.data.model.ExerciseModel
 import java.util.ArrayList
 
 object Constants {

@@ -2,7 +2,7 @@ package com.gonzaga.yu.workit
 
 import android.app.Application
 import android.content.Context
-import com.R.R.utils.TypefaceUtil
+import com.gonzaga.yu.workit.utils.TypefaceUtil
 
 class MyApplication : Application() {
 

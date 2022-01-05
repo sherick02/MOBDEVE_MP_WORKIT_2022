@@ -1,11 +1,11 @@
-package com.R.R.utils
+package com.gonzaga.yu.workit.utils
 
 import android.net.ConnectivityManager
-import com.mobdeve.s11.gonzaga.luis.workitkotlin.R
 import android.app.Activity
 import android.content.Context
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import android.content.DialogInterface
+import com.gonzaga.yu.workit.R
 
 object Utils {
     fun isNetworkAvailable(

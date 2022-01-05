@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.gonzaga.yu.workit.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_dest_to_home_details"
+            app:destination="@id/nav_days_list" />
+        <action
+            android:id="@+id/action_home_dest_to_my_work"
+            app:destination="@id/nav_my_workout" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_days_list"
+        android:name="com.gonzaga.yu.workit.ui.home.DaysListFragment"
+        android:label="Home Detail"
+        tools:layout="@layout/fragment_days_list">
+        <action
+            android:id="@+id/action_days_dest_to_exercise_list"
+            app:destination="@id/nav_days_exercise" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_days_exercise"
+        android:name="com.gonzaga.yu.workit.ui.home.DaysExerciseListFragment"
+        android:label="Exercise List"
+        tools:layout="@layout/fragment_days_exercise_list">
+        <action
+            android:id="@+id/action_days_dest_to_view_exercise"
+            app:destination="@id/nav_view_exercise" />
+        <action
+            android:id="@+id/action_days_dest_to_run_exercise"
+            app:destination="@id/nav_run_exercise" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_view_exercise"
+        android:name="com.gonzaga.yu.workit.ui.home.ViewExerciseFragment"
+        android:label="View Exercise"
+        tools:layout="@layout/fragment_view_exercise" />
+
+    <fragment
+        android:id="@+id/nav_run_exercise"
+        android:name="com.gonzaga.yu.workit.ui.home.RunningExerciseFragment"
+        android:label="Run Exercise"
+        tools:layout="@layout/fragment_running_exercise">
+        <action
+            android:id="@+id/action_running_dest_to_done_exercise"
+            app:destination="@id/nav_done_exercise"
+            app:popUpTo="@+id/nav_home" />
+        <action
+            android:id="@+id/action_running_dest_to_rest_time"
+            app:destination="@id/nav_rest_time" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_done_exercise"
+        android:name="com.gonzaga.yu.workit.ui.home.DoneExerciseFragment"
+        android:label="Done Exercise"
+        tools:layout="@layout/fragment_done_exercise" />
+
+    <fragment
+        android:id="@+id/nav_rest_time"
+        android:name="com.gonzaga.yu.workit.ui.home.RestTimeFragment"
+        android:label="Rest Time"
+        tools:layout="@layout/fragment_rest_time" />
+
+    <fragment
+        android:id="@+id/nav_my_workout"
+        android:name="com.gonzaga.yu.workit.ui.home.MyWorkoutFragment"
+        android:label="Home Detail"
+        tools:layout="@layout/fragment_days_list">
+
+        <action
+            android:id="@+id/action_work_dest_create_dest"
+            app:destination="@id/nav_create_workourt" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_create_workourt"
+        android:name="com.gonzaga.yu.workit.ui.home.CreateWorkoutFragment"
+        android:label="Create workout"
+        tools:layout="@layout/fragment_create_workout" >
+
+        <action
+            android:id="@+id/action_work_dest_create_exercise"
+            app:destination="@id/nav_add_exercise" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_add_exercise"
+        android:name="com.gonzaga.yu.workit.ui.home.AddExerciseFragment"
+        android:label="Add Exercise"
+        tools:layout="@layout/fragment_add_exercise" />
+
+    <fragment
+        android:id="@+id/nav_streak"
+        android:name="com.gonzaga.yu.workit.ui.streak.StreakFragment"
+        android:label="@string/menu_streak"
+        tools:layout="@layout/fragment_streak" />
+
+    <fragment
+        android:id="@+id/nav_reminder"
+        android:name="com.gonzaga.yu.workit.ui.reminder.ReminderFragment"
+        android:label="@string/menu_reminder"
+        tools:layout="@layout/fragment_reminder">
+
+        <action
+            android:id="@+id/action_reminder_dest_to_new_reminder"
+            app:destination="@id/nav_new_reminder" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_new_reminder"
+        android:name="com.gonzaga.yu.workit.ui.reminder.NewReminderFragment"
+        android:label="New Reminder"
+        tools:layout="@layout/fragment_new_reminder">
+
+        <action
+            android:id="@+id/action_new_reminder_dest_to_repeat"
+            app:destination="@id/nav_repeat" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_repeat"
+        android:name="com.gonzaga.yu.workit.ui.reminder.RepeatFragment"
+        android:label="Repeat"
+        tools:layout="@layout/fragment_repeat" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.gonzaga.yu.workit.ui.auth.LogoutFragment"
+        android:label="@string/menu_log_out"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

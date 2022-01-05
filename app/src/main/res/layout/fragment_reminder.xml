@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.reminder.ReminderFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="47dip"
+            android:layout_marginHorizontal="16dip"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_back_blue"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="@string/menu_reminder"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView3"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="16dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="30dip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv1"
+            app:srcCompat="@drawable/ic_add" />
+
+        <TextView
+            android:id="@+id/tv_new_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_7sdp"
+            android:text="New Reminder"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView3"
+            app:layout_constraintStart_toEndOf="@id/appCompatImageView3"
+            app:layout_constraintTop_toTopOf="@+id/appCompatImageView3" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_7sdp"
+            android:text="Edit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/appCompatImageView3" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="22dip"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_new_reminder" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dip"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_7sdp"
+            android:text="Other"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv4" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_reminders"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

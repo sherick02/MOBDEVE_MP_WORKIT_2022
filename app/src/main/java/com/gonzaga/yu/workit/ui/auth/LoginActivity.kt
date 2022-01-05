@@ -1,12 +1,13 @@
-package workitkotlin.mobdeve.s11.gonzaga.luis.workitkotlin.ui.auth
+package com.gonzaga.yu.workit.ui.auth
 
 import android.content.Context
 import android.os.Bundle
 import android.view.View
-import com.R.R.ui.base.BaseActivity
+
 import com.gonzaga.yu.workit.R
 import com.gonzaga.yu.workit.databinding.ActivityLoginBinding
-import workitkotlin.mobdeve.s11.gonzaga.luis.workitkotlin.MainActivity
+import com.gonzaga.yu.workit.MainActivity
+import com.gonzaga.yu.workit.ui.base.BaseActivity
 
 class LoginActivity : BaseActivity<ActivityLoginBinding?>(), View.OnClickListener {
 

@@ -1,12 +1,13 @@
-package com.R.R.utils
+package com.gonzaga.yu.workit.utils
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.gonzaga.yu.workit.MyApplication.Companion.appContext
+import com.gonzaga.yu.workit.data.common.Constants
+import com.gonzaga.yu.workit.data.model.User
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import workitkotlin.mobdeve.s11.gonzaga.luis.workitkotlin.MyApplication.Companion.appContext
-import com.R.R.data.common.Constants
-import com.R.R.data.model.User
+
 
 object Preferences {
 

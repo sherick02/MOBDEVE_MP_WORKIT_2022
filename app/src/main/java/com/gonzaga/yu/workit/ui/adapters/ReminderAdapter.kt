@@ -1,4 +1,4 @@
-package com.R.R.ui.adapters
+package com.gonzaga.yu.workit.ui.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -12,8 +12,8 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.gonzaga.yu.workit.R
-import com.R.R.data.listeners.OnItemClickListener
-import com.R.R.data.model.ReminderModel
+import com.gonzaga.yu.workit.data.listeners.OnItemClickListener
+import com.gonzaga.yu.workit.data.model.ReminderModel
 import java.util.*
 
 class ReminderAdapter(

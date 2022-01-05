@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.auth.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".0" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="#C4C4C4"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/user_registration"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+            <TextView
+                android:id="@+id/tv_new_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginTop="18dip"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/first_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:background="@drawable/back_edt"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:paddingHorizontal="@dimen/_7sdp"
+                android:paddingVertical="@dimen/_7sdp"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_new_reminder" />
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginTop="12dip"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/last_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+            <EditText
+                android:id="@+id/edt_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:background="@drawable/back_edt"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:paddingHorizontal="@dimen/_7sdp"
+                android:paddingVertical="@dimen/_7sdp"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_edit" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_dob_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginTop="12dip"
+                app:layout_constraintTop_toBottomOf="@+id/edt_lname">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start"
+                    android:text="@string/birth_date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toStartOf="@id/guideline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edt_dob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/back_edt"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="none"
+                    android:lines="1"
+                    android:paddingHorizontal="@dimen/_7sdp"
+                    android:paddingVertical="@dimen/_7sdp"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintEnd_toStartOf="@id/guideline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".5" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start"
+                    android:text="@string/sex"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edt_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/back_edt"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:paddingHorizontal="@dimen/_7sdp"
+                    android:paddingVertical="@dimen/_7sdp"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginTop="12dip"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/set_password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_dob_sex" />
+
+            <EditText
+                android:id="@+id/edt_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:background="@drawable/back_edt"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:paddingHorizontal="@dimen/_7sdp"
+                android:paddingVertical="@dimen/_7sdp"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginTop="12dip"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/re_enter_password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_pwd" />
+
+            <EditText
+                android:id="@+id/edt_cpwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:background="@drawable/back_edt"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:paddingHorizontal="@dimen/_7sdp"
+                android:paddingVertical="@dimen/_7sdp"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+            <CheckBox
+                android:id="@+id/cb_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start"
+                android:paddingStart="@dimen/_7sdp"
+                android:paddingLeft="@dimen/_7sdp"
+                android:text="@string/terms"
+                app:layout_constraintTop_toBottomOf="@id/edt_cpwd" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcv_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                app:cardBackgroundColor="#D1D5DB"
+                app:cardCornerRadius="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_terms">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:paddingVertical="@dimen/_7sdp"
+                    android:text="@string/continue_"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edt_pwd" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                app:layout_constraintTop_toBottomOf="@+id/mcv_continue" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

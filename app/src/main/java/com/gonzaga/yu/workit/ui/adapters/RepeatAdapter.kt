@@ -1,4 +1,4 @@
-package com.R.R.ui.adapters
+package com.gonzaga.yu.workit.ui.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,9 +9,9 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.gonzaga.yu.workit.R
-import com.R.R.data.common.Constants
-import com.R.R.data.listeners.OnItemClickListener
-import com.R.R.data.model.RepeatModel
+import com.gonzaga.yu.workit.data.common.Constants
+import com.gonzaga.yu.workit.data.listeners.OnItemClickListener
+import com.gonzaga.yu.workit.data.model.RepeatModel
 import java.util.*
 
 class RepeatAdapter(

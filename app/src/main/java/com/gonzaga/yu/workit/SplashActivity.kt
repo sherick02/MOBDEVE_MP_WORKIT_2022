@@ -4,11 +4,10 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import com.gonzaga.yu.workit.R
 import com.gonzaga.yu.workit.databinding.ActivitySplashBinding
-import mp_workit_2022.com.gonzaga.yu.workit.ui.auth.LoginActivity
-import com.R.R.ui.base.BaseActivity
-import com.R.R.utils.Preferences
+import com.gonzaga.yu.workit.utils.Preferences
+import com.gonzaga.yu.workit.ui.auth.LoginActivity
+import com.gonzaga.yu.workit.ui.base.BaseActivity
 
 class SplashActivity : BaseActivity<ActivitySplashBinding?>() {
 

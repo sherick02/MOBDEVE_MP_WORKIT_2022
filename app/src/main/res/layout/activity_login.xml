@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.auth.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_32sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".30" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/welcome"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+        <TextView
+            android:id="@+id/tv_new_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="18dip"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Email address:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:background="@drawable/back_edt"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:paddingHorizontal="@dimen/_7sdp"
+            android:paddingVertical="@dimen/_7sdp"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_new_reminder" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="12dip"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+        <EditText
+            android:id="@+id/edt_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:background="@drawable/back_edt"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:paddingHorizontal="@dimen/_7sdp"
+            android:paddingVertical="@dimen/_7sdp"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_edit" />
+
+        <TextView
+            android:id="@+id/tv_dont_have_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:includeFontPadding="false"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/don_t_have_an_account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_pwd" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            app:cardBackgroundColor="#D1D5DB"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@+id/mcv_fb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/_7sdp"
+                android:text="@string/log_in"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_pwd" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            app:cardBackgroundColor="#0099FF"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/_7sdp"
+                android:text="Facebook Log-In"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_pwd" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".95" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

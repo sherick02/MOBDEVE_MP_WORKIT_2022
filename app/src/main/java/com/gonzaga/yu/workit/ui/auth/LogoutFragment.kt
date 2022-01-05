@@ -1,4 +1,4 @@
-package workitkotlin.mobdeve.s11.gonzaga.luis.workitkotlin.ui.auth
+package com.gonzaga.yu.workit.ui.auth
 
 import android.content.Context
 import android.content.Intent
@@ -7,17 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import workitkotlin.mobdeve.s11.gonzaga.luis.workitkotlin.MainActivity
-import com.R.R.ui.base.BaseFragment
-import com.R.R.utils.Preferences.removePref
+import com.gonzaga.yu.workit.MainActivity
+import com.gonzaga.yu.workit.ui.base.BaseFragment
+import com.gonzaga.yu.workit.utils.Preferences.removePref
 import com.gonzaga.yu.workit.R
 import com.gonzaga.yu.workit.databinding.FragmentLogoutBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [LogoutFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class LogoutFragment : BaseFragment(), View.OnClickListener {
     private var mParam1: String? = null
     private var binding: FragmentLogoutBinding? = null

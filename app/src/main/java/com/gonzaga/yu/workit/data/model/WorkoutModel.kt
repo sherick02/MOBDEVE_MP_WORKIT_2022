@@ -1,5 +1,6 @@
-package com.R.R.data.model
+package com.gonzaga.yu.workit.data.model
 
+import com.gonzaga.yu.workit.data.model.ExerciseModel
 import java.io.Serializable
 import java.util.*
 

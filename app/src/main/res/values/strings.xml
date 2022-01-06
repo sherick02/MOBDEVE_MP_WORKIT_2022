@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">MP_WORKIT_2022</string>
+    <string name="app_name">WorkIt!</string>
+
+
+    <string name="ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="network_alert">We\'re having trouble reaching the network. Check your connection or try again in a few minutes.</string>
+    <string name="no_internet">No Internet</string>
+    <string name="welcome">Welcome</string>
+    <string name="email_address">Email address:</string>
+    <string name="password">Password:</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="log_in">Log-in</string>
+    <string name="user_registration">User Registration</string>
+    <string name="continue_">Continue</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="set_password">Set Password:</string>
+    <string name="re_enter_password">Re-enter Password:</string>
+    <string name="birth_date">Birth Date:</string>
+    <string name="sex">Sex:</string>
+    <string name="terms">Your personal information will be collected as part of the identity verification process to prevent identity theft or fraud, and for the government to be able to reach you. Your personal information can only be accessed by the authorized personnel from the government.</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_streak">Streak</string>
+    <string name="menu_reminder">Reminder</string>
+    <string name="menu_log_out">Log-Out</string>
+    <string name="burst_workout">Burst workout</string>
+    <string name="busy_schedule_work">Busy Schedule workout</string>
+    <string name="my_own_work">My own  workouts</string>
+    <string name="logout_">Logout</string>
+
 </resources>

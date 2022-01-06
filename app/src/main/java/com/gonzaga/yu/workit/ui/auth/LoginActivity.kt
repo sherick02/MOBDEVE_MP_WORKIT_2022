@@ -9,11 +9,11 @@ import com.gonzaga.yu.workit.databinding.ActivityLoginBinding
 import com.gonzaga.yu.workit.MainActivity
 import com.gonzaga.yu.workit.ui.base.BaseActivity
 
-class LoginActivity : BaseActivity<ActivityLoginBinding?>(), View.OnClickListener {
+open class LoginActivity : BaseActivity<ActivityLoginBinding?>(), View.OnClickListener {
 
     override val layoutId: Int get() = R.layout.activity_login
 
-    override val context: Context protected get() = this
+    override val context: Context get() = this
 
     override fun initViews(savedInstanceState: Bundle?) {}
 

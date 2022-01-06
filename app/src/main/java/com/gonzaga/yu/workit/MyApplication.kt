@@ -2,7 +2,6 @@ package com.gonzaga.yu.workit
 
 import android.app.Application
 import android.content.Context
-import com.gonzaga.yu.workit.utils.TypefaceUtil
 
 class MyApplication : Application() {
 
@@ -26,7 +25,7 @@ class MyApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        TypefaceUtil.overrideFont(applicationContext, "SERIF", "fonts/Poppins-Medium.ttf")
+        //TypefaceUtil.overrideFont(applicationContext, "SERIF", "fonts/Poppins-Medium.ttf")
         instance = this
     }
 
